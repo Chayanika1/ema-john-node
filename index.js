@@ -17,7 +17,7 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
                 const query ={};
                 const cursor = serviceCollection.find(query);
                 const service = await cursor.toArray();
-                res.send(service)
+                res.send(service);
             })
         }
         finally {
